@@ -1,0 +1,9 @@
+main {
+    text-align: center;
+    font-size: large;
+}
+
+main > ul {
+    list-style-type: none;
+    padding: 0;
+}
