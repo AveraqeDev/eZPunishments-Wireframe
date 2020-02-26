@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #232323;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 500px;
+    padding: 20px;
+    color: #ccc;
+}
+
+.signup__container h2 {
+    padding-bottom: 10px;
+}
+
+input {
+    border: 1px solid #232323;
+    padding: 10px;
+    margin: 5px 5px;
+    width: 50%;
+    max-width: 300px;
+}
+
+.signup__container--submit {
+    margin: 10px 5px;
+}
+
+.signup__container--existing-account {
+    font-weight: 300;
+    font-size: 14px;
+    padding: 2px;
+}
+
+@media screen and (min-width: 990px) {
+    .signup__container {
+        margin: auto auto;
+    }
+}
