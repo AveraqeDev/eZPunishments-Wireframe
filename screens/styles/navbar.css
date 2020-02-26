@@ -45,7 +45,7 @@ header {
       position: absolute;
       right: 0px;
       top: 88px;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       background-color: #232323;
@@ -99,6 +99,7 @@ header {
     }
 
     .nav {
+        display: flex;
         position: static;
         flex-direction: row;
         justify-content: space-between;
