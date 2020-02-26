@@ -46,7 +46,26 @@
         </header>
 
         <main>
+            <form class="punish">
+                <div class="punish__container">
+                    <h2>Punish - Username</h2>
 
+                    <select>
+                        <option>Ban</option>
+                        <option>Mute</option>
+                    </select>
+                    
+                    <input type="text" placeholder="Length" class="punish__container--length" required>
+                    <input type="radio" id="hours" name="length" value="hours">
+                    <label for="hours">Hours</label><br>
+                    <input type="radio" id="days" name="length" value="days">
+                    <label for="days">Days</label><br>
+                    <input type="radio" id="permanent" name="length" value="permanent">
+                    <label for="permanent">Permanent</label>
+
+                    <textarea placeholder="Enter Reason"></textarea>
+                </div>
+            </form>
         </main>
 
         <footer>
