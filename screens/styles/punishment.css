@@ -30,11 +30,11 @@ main {
 }
 
 .punishment__heading--user {
-    color: crimson;
+    color: #0088a9;
 }
 
 .punishment__heading--id {
-    color: #0088a9;
+    color: #FF9F19;
 }
 
 .punishment__heading--remove {
