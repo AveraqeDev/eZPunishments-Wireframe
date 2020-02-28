@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./styles/navbar.css">
         <link rel="stylesheet" href="./styles/punishment.css">
     </head>
-    <body>
+    <span>
         <header>
             <a class="brand">eZPunishments</a>
 
@@ -46,29 +46,52 @@
 
         <main>
             <div class="punishment">
-                <h2 class="punishment__user">Username</h2>
-                <h3 class="punishment__id">#12345</h3>
-                
-                <button>Remove</button>
+                <div class="punishment__heading">
+                    <h2 class="punishment__heading--user">Username</h2>
+                    <p class="punishment__heading--id">#12345</p>
+                </div>
+
+                <button class="punishment__heading--remove">Remove</button>
 
                 <div class="punishment__info">
                     <ul>
-                        <li>Reason: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Type: Ban</li>
-                        <li>Length: 30 days</li>
-                        <li>Issued By: AveraqeDev</li>
-                        <li>Removed By: null</li>
-                        <li>Removed Reason: null</li>
-                        <li>Active: True</li>
-                        <li>Dispute Active: False</li>
+                        <li>
+                            <span class="punishment__info--label">Reason:</span> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Type:</span> 
+                            <p>Ban</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Length:</span> 
+                            <p>30 days</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Issued By:</span> 
+                            <p>AveraqeDev</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Removed By:</span> 
+                            <p>N/A</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Remove Reason:</span> 
+                            <p>N/A</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Active:</span> 
+                            <p>True</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Dispute Active:</span> 
+                            <p>False</p>
+                        </li>
+                        <li>
+                            <span class="punishment__info--label">Date Applied:</span> 
+                            <p>26 Feb, 2020</p>
+                        </li>
                     </ul>
-                    <div className='punishment__info--date-applied'>
-                        Applied
-                        {' '}
-                        <span className='date'>
-                            26 Feb, 2020
-                        </span>
-                      </div>
                 </div>
             </div>
         </main>
