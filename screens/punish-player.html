@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles/navbar.css">
         <link rel="stylesheet" href="./styles/punish-player.css">
-        <link rel="stylesheet" href="./styles/footer.css">
     </head>
     <body>
         <header>
@@ -48,29 +47,28 @@
         <main>
             <form class="punish">
                 <div class="punish__container">
-                    <h2>Punish - Username</h2>
+                    <h2>Punish - [Username]</h2>
 
-                    <select>
+                    <select class="punish__container--type">
                         <option>Ban</option>
                         <option>Mute</option>
                     </select>
                     
-                    <input type="text" placeholder="Length" class="punish__container--length" required>
-                    <input type="radio" id="hours" name="length" value="hours">
-                    <label for="hours">Hours</label><br>
-                    <input type="radio" id="days" name="length" value="days">
-                    <label for="days">Days</label><br>
-                    <input type="radio" id="permanent" name="length" value="permanent">
-                    <label for="permanent">Permanent</label>
+                    <input type="number" placeholder="Length" class="punish__container--length" required>
+                    <div class="punish__container--radios">
+                        <input type="radio" id="hours" name="length" value="hours">
+                        <label for="hours">Hours</label><br>
+                        <input type="radio" id="days" name="length" value="days">
+                        <label for="days">Days</label><br>
+                        <input type="radio" id="permanent" name="length" value="permanent">
+                        <label for="permanent">Permanent</label>
+                    </div>
 
                     <textarea placeholder="Enter Reason"></textarea>
+
+                    <button type="submit" class="punish__container--submit">Execute</button>
                 </div>
             </form>
         </main>
-
-        <footer>
-            <p>Designed and developed by: <span>Matthew Wagaman</span></p>
-            <a href="https://www.matthewwagaman.com/" target="blank">https://www.matthewwagaman.com/</a>
-        </footer>
     </body>
 </html>

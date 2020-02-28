@@ -8,6 +8,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.signup {
+    margin: 2rem;
+}
+
 .signup__container {
     display: flex;
     flex-direction: column;
@@ -19,6 +23,7 @@ body {
     max-width: 500px;
     padding: 20px;
     color: #ccc;
+    margin: auto auto;
 }
 
 .signup__container h2 {
@@ -41,10 +46,4 @@ input {
     font-weight: 300;
     font-size: 14px;
     padding: 2px;
-}
-
-@media screen and (min-width: 990px) {
-    .signup__container {
-        margin: auto auto;
-    }
 }
